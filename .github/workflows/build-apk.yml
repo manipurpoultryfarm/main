@@ -23,18 +23,37 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Show files
+      - name: Find and Build Android Project
+        shell: bash
         run: |
-          echo "Repository files:"
-          find . -maxdepth 3 -type f | sort
+          echo "Searching for Android project..."
 
-      - name: Build APK
-        run: |
-          cd MPF_Android_App
+          SETTINGS_FILE=$(find . -name "settings.gradle" -o -name "settings.gradle.kts" | head -n 1)
+
+          if [ -z "$SETTINGS_FILE" ]; then
+            echo "ERROR: settings.gradle was not found."
+            find . -maxdepth 4 -type f | sort
+            exit 1
+          fi
+
+          PROJECT_DIR=$(dirname "$SETTINGS_FILE")
+
+          echo "Android project found at:"
+          echo "$PROJECT_DIR"
+
+          cd "$PROJECT_DIR"
+
           gradle assembleDebug
+
+      - name: Find APK
+        run: |
+          echo "APK files:"
+          find . -type f -name "*.apk"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: MPF-Android-APK
-          path: MPF_Android_App/app/build/outputs/apk/debug/app-debug.apk
+          path: |
+            **/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
