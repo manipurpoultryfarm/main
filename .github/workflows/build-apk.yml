@@ -1,0 +1,43 @@
+name: Build MPF APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: MPF_Android_APK_Project_WITH_LOGO
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build Debug APK
+        run: gradle assembleDebug
+
+      - name: Rename APK
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk \
+          app/build/outputs/apk/debug/Manipur-Poultry-Farm.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Manipur-Poultry-Farm-APK
+          path: MPF_Android_APK_Project_WITH_LOGO/app/build/outputs/apk/debug/Manipur-Poultry-Farm.apk
+          if-no-files-found: error
