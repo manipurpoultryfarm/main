@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: MPF_Android_APK_Project_WITH_LOGO
+        working-directory: MPF_Android_APK_Project
 
     steps:
       - name: Checkout repository
@@ -39,5 +39,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Manipur-Poultry-Farm-APK
-          path: MPF_Android_APK_Project_WITH_LOGO/app/build/outputs/apk/debug/Manipur-Poultry-Farm.apk
+          path: MPF_Android_APK_Project/app/build/outputs/apk/debug/Manipur-Poultry-Farm.apk
           if-no-files-found: error
