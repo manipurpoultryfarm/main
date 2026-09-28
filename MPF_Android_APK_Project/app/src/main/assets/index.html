@@ -650,7 +650,66 @@ table{background:#fff}thead th{position:sticky;top:0;z-index:2;background:#eef4f
  .panel h2{font-size:18px!important}.panel h3{font-size:15px!important}
 }
 </style>
-</head>
+
+<style id="mpf-production-professional-2026">
+/* MPF operations design system: visual-only; preserves original form IDs and JS. */
+:root{--green:#183b31;--green2:#245647;--primary:#183b31;--line:#e2e7e5;--ink:#1d2926;--muted:#64746d;--bg:#f5f7f6;--soft:#edf3f0;--shadow:0 3px 14px rgba(17,44,34,.045);--yellow:#c5a342}
+html{scroll-behavior:smooth}body{background:#f5f7f6!important;color:#1d2926!important;font-family:Inter,"Segoe UI",Arial,sans-serif!important;font-size:14px}
+body>header{background:#17382f!important;background-image:none!important;box-shadow:0 1px 8px #102e241c!important;border-bottom:3px solid #bd9c40!important;padding:13px 24px!important}
+header h1{font-size:19px!important;font-weight:750!important;letter-spacing:-.4px!important}header small{color:#d6e1dc!important}
+header .mpf-logo{background:white;border-radius:9px!important;padding:3px;box-shadow:none!important}
+nav{background:#fff!important;box-shadow:0 1px 3px #1a3b2c12!important;border-bottom:1px solid #e4e9e6!important;padding:9px 17px!important;gap:5px!important}
+nav button{border-radius:7px!important;font-size:12.5px!important;padding:10px 13px!important;letter-spacing:0!important;transition:background .15s!important}
+nav button.active{background:#eaf1ed!important;color:#173b30!important;border-color:#d7e3dc!important;box-shadow:inset 0 -2px 0 #173b30!important}
+nav button:hover{background:#f2f6f4!important}
+main{max-width:1580px!important;padding:24px 26px 55px!important}
+h2{font-size:21px!important;font-weight:760!important;letter-spacing:-.5px!important;color:#20382f!important;margin-bottom:16px!important}
+h3{font-size:16px!important;font-weight:750!important;letter-spacing:-.2px!important;color:#253a31!important}
+.panel,.card,.reportbox{background:#fff!important;border:1px solid #e2e9e5!important;border-radius:10px!important;box-shadow:0 2px 10px rgba(19,48,36,.035)!important;padding:18px!important}
+.cards{gap:12px!important}.card{border-top:2px solid #bfa14e!important}.card b{color:#1c4234!important;font-size:23px!important}
+label{font-size:12px!important;color:#40594c!important;font-weight:700!important}
+input:not([type=checkbox]):not([type=radio]),select,textarea{border:1px solid #cfdcd5!important;background:#fff!important;border-radius:6px!important;min-height:38px!important;padding:9px 11px!important;box-shadow:none!important;color:#213b30!important}
+input:focus,select:focus,textarea:focus{outline:2px solid #90b8a4!important;outline-offset:1px!important}
+input[type=checkbox]{accent-color:#235d45;width:17px;height:17px;cursor:pointer}
+button,.primary,.secondary,.danger{font-family:inherit!important;letter-spacing:0!important}
+.primary,.secondary,.danger{border-radius:6px!important;box-shadow:none!important;padding:10px 15px!important;font-size:12.5px!important;font-weight:700!important;transition:filter .15s!important}
+.primary{background:#20553e!important;color:white!important}.secondary{background:#eaf0ec!important;color:#254a39!important;border:1px solid #d4e0d8!important}.danger{background:#ae3934!important}
+.primary:hover,.secondary:hover,.danger:hover{filter:brightness(.94)}
+.tablewrap{border:1px solid #e1e8e3!important;border-radius:8px!important;background:white!important}
+table{border-collapse:collapse!important}th{background:#f1f5f2!important;color:#465d50!important;font-size:10px!important;letter-spacing:.6px!important;font-weight:800!important;padding:12px 10px!important}
+td{color:#2d3d34!important;font-size:12.5px!important;padding:11px 10px!important;border-bottom:1px solid #ebf0ed!important}
+tbody tr:hover{background:#f5f9f6!important}
+.modal{backdrop-filter:blur(4px)}.modalbox{border-radius:11px!important;box-shadow:0 18px 60px #142c2850!important}
+.notice{border-radius:8px!important}
+#mpfWeeklyBroilerPanel{border:1px solid #dbe6dd!important;border-top:4px solid #b69a42!important;padding:22px!important}
+#mpfWeeklyBroilerPanel h3{font-size:19px!important;margin-bottom:7px!important}
+#mpfWeeklyBroilerPanel .muted{line-height:1.6!important;color:#61766a!important}
+#mpfWeeklyBroilerPanel .actions{margin:12px 0!important;gap:8px!important}
+#mpfWeeklyBroilerPanel tbody tr{cursor:pointer}
+#mpfWeeklyBroilerPanel tbody tr:focus-within{outline:2px solid #87b49b;outline-offset:-2px}
+#mpfWeeklyTotals{display:inline-block;background:#eff5f0;color:#244b36;padding:10px 13px;border-radius:6px;font-size:13px}
+@media(max-width:700px){main{padding:12px!important}body>header{padding:10px 13px!important}.panel,.card,.reportbox{padding:13px!important}#mpfWeeklyBroilerPanel{padding:14px!important}h2{font-size:18px!important}}
+@media print{body{background:white!important}.panel,.card,.reportbox{box-shadow:none!important}}
+</style>
+
+<style id="mpf-global-popup-forms">
+/* Global production form dialogs */
+.mpf-form-modal{position:fixed;inset:0;z-index:10080;background:rgba(11,28,22,.58);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:18px}
+.mpf-form-modal.show{display:flex}
+.mpf-form-dialog{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#fff;border:1px solid #dbe5df;border-radius:12px;box-shadow:0 24px 70px rgba(9,30,21,.28)}
+.mpf-form-head{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 18px;background:#183b31;color:#fff;border-bottom:3px solid #bea047}
+.mpf-form-head strong{font-size:16px}.mpf-form-close{margin:0!important;border:1px solid #ffffff4d!important;background:#ffffff16!important;color:#fff!important;border-radius:6px!important;padding:7px 11px!important}
+.mpf-form-body{padding:20px}.mpf-form-body form{margin:0!important}.mpf-popup-form-hidden{display:none!important}
+@media(max-width:650px){.mpf-form-modal{padding:0;align-items:flex-end}.mpf-form-dialog{width:100vw;max-height:94vh;border-radius:14px 14px 0 0}.mpf-form-body{padding:14px}}
+</style>
+<style id="mpf-operational-popup-style">
+.mpf-op-backdrop{position:fixed;inset:0;z-index:10065;background:#0b1d17a8;display:none;backdrop-filter:blur(3px)}.mpf-op-backdrop.show{display:block}
+.tab .panel.mpf-op-panel{display:none!important}.tab .panel.mpf-op-panel.mpf-op-open{display:block!important;position:fixed!important;z-index:10070!important;inset:5vh max(3vw,calc((100vw - 1050px)/2)) auto!important;max-height:89vh!important;overflow:auto!important;background:white!important;border:1px solid #d9e3dc!important;box-shadow:0 25px 80px #10281e55!important;padding:25px!important;border-radius:12px!important}
+.mpf-op-launch{margin:0 0 15px!important}.mpf-op-close{float:right!important;margin:0 0 12px 10px!important;background:#eaf1ec!important;color:#193d2e!important}
+@media(max-width:650px){.tab .panel.mpf-op-panel.mpf-op-open{inset:2vh 2vw auto!important;max-height:95vh!important;padding:14px!important}}
+#mpfLedgerTable tr{cursor:pointer}#mpfLedgerTable tr:hover{background:#f3f8f4}
+</style><style id="mpf-accounting-role-style">
+</style></head>
 <body class="login-active">
 <div id="welcomeScreen" class="welcome-screen"><div class="welcome-card"><div class="welcome-icon">🐔</div><h1>Welcome to Manipur Poultry Farm</h1><p>Your business dashboard is loading...</p></div></div>
 
@@ -1074,6 +1133,8 @@ table{background:#fff}thead th{position:sticky;top:0;z-index:2;background:#eef4f
 </div>
 </section>
 
+
+
 <section id="customers" class="tab">
 <div class="panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap"><h2 style="margin:0">Commercial Customers</h2><div class="card" style="min-width:150px;padding:12px 16px"><span class="muted">Total Customers</span><b id="commercialCustomerCount">0</b></div></div><div class="search-panel"><label>Customer Name / Phone<input id="customerNameFilter" list="customerList" placeholder="Search customer name or phone number..." autocomplete="off" oninput="renderCustomers(this.value)"></label><button class="secondary" onclick="$('customerNameFilter').value='';renderCustomers('')">Clear Customer</button></div><p class="muted">Customers are automatically created from commercial orders. Editing an order updates the customer information shown there.</p>
 <div class="tablewrap"><table><thead><tr><th>Customer</th><th>Contact</th><th>Address</th><th>Breed / Type</th><th>Rate / Chick</th><th>No. of Chicks</th><th>Last Order Date</th><th>Orders</th><th>Sales</th><th>Outstanding</th></tr></thead><tbody id="customerRows"></tbody></table></div><div id="pager-customers" class="pager"></div></div>
@@ -1476,6 +1537,16 @@ table{background:#fff}thead th{position:sticky;top:0;z-index:2;background:#eef4f
 <button class="primary" onclick="printReport('integration')">Print Broiler Integration Report</button>
 <button class="primary" onclick="printReport('sales')">Print Sales Report</button>
 <div class="reportbox" style="margin:10px 0 14px"><h3 style="margin-bottom:6px">Pending Orders by Chick Type</h3><p class="muted" style="margin-top:0">Print or send only pending orders for Broiler, Kuroiler, BV380 Layer, FFFG and other chick types.</p><div class="grid" style="max-width:520px"><label>Chick Type<select id="pendingOrderBreed" onclick="refreshPendingOrderBreedOptions()" onfocus="refreshPendingOrderBreedOptions()"><option value="all">All Pending Chick Types</option></select></label></div><div class="actions"><button class="primary" onclick="printPendingOrdersByBreed()">🖨️ Print Pending Orders</button><button class="secondary" onclick="sendPendingOrdersByBreed()">📲 Send Pending Orders</button></div></div>
+<div class="reportbox" id="mpfWeeklyBroilerPanel" style="margin:14px 0;border:2px solid #e8c32a;background:#fff">
+<h3>Weekly Broiler Sales Plan — Select Farmers</h3>
+<p class="muted">Choose a week and tick the pending Broiler orders you plan to sell that week. This report does not change order status or delivery dates.</p>
+<div class="grid" style="max-width:650px"><label>Week starting (Monday)<input type="date" id="mpfWeeklyDate" onchange="mpfRenderWeeklyBroiler()"></label>
+<label>Find farmer or order<input id="mpfWeeklySearch" placeholder="Farmer name, phone or order ID" oninput="mpfRenderWeeklyBroiler()"></label></div>
+<div class="actions"><button type="button" class="secondary" onclick="mpfWeeklySelectVisible(true)">Select displayed</button><button type="button" class="secondary" onclick="mpfWeeklySelectVisible(false)">Clear displayed</button><button type="button" class="secondary" onclick="mpfRenderWeeklyBroiler()">Refresh pending orders</button></div>
+<p id="mpfWeeklyTotals" style="font-weight:bold"></p>
+<div class="tablewrap" style="max-height:380px"><table><thead><tr><th>Select</th><th>Order ID</th><th>Farmer</th><th>Phone</th><th>Qty</th><th>Delivery Date</th><th>Value</th><th>Edit</th></tr></thead><tbody id="mpfWeeklyRows"></tbody></table></div>
+<div class="actions"><button type="button" class="primary" onclick="mpfDownloadWeeklyBroilerPDF()">Download Selected Weekly PDF</button><button type="button" class="secondary" onclick="mpfPrintWeeklyBroiler()">Print / Save as PDF</button></div>
+</div>
 <button class="primary" onclick="printOrderStatusSummary('pending')">Print All Pending Orders Report</button>
 <button class="primary" onclick="printOrderStatusSummary('delivered')">Print Delivered Orders Report</button>
 <button class="secondary" onclick="sendOrderStatusSummary('pending')">📲 Send All Pending Orders</button>
@@ -1665,7 +1736,7 @@ const SUPABASE_URL = "https://hzymlcmockvxkyfrbrgh.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6eW1sY21vY2t2eGt5ZnJicmdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODczNzM2MzUsImV4cCI6MjEwMjk0OTYzNX0.QIE_73f-W4oK4snImML9h5tIqaYMdcj9PeqbZv1qrvM";
 let supabaseClient=null, currentUser=null, saveTimer=null, realtimeChannel=null, lastSavedAt=null;
 const MPF_LOCAL_DB_KEY="mpf_company_db_v10", MPF_LOCAL_META_KEY="mpf_company_meta_v10", MPF_DAILY_PREFIX="mpf_daily_backup_v10_", MPF_OFFLINE_AUTH_KEY="mpf_offline_auth_v10";
-const DEFAULT_DB={farmers:[],batches:[],followups:[],sales:[],liftings:[],training:[],salesTargets:[],inventory:[],inventoryLogs:[],posSales:[],posCustomers:[],farmerOrders:[],farmerChecklists:[],farmerSupport:[],farmerNotices:[],farmerDailyRecords:[],farmerEditRequests:[],farmerHeartbeats:[],farmerDeletedOrderIds:[],farmerDeletedSupportIds:[],farmerDeletedDailyRecordIds:[],deletedRecords:[],events:[],contentItems:[]};
+const DEFAULT_DB={farmerAccountAudit:[],farmerAccounts:[],broilerLedger:[],farmers:[],batches:[],followups:[],sales:[],liftings:[],training:[],salesTargets:[],inventory:[],inventoryLogs:[],posSales:[],posCustomers:[],farmerOrders:[],farmerChecklists:[],farmerSupport:[],farmerNotices:[],farmerDailyRecords:[],farmerEditRequests:[],farmerHeartbeats:[],farmerDeletedOrderIds:[],farmerDeletedSupportIds:[],farmerDeletedDailyRecordIds:[],deletedRecords:[],events:[],contentItems:[]};
 let db=structuredClone(DEFAULT_DB);
 let edit={farmer:null,batch:null,follow:null,sale:null,lift:null,training:null,inventory:null,event:null,content:null};
 const $=id=>document.getElementById(id), today=()=>new Date().toISOString().slice(0,10);
@@ -1674,7 +1745,7 @@ const makeId=(p,n)=>p+String(n).padStart(5,"0");
 
 function normalizeDb(data={}){
   const d={...structuredClone(DEFAULT_DB),...data};
-  d.training=d.training||[]; d.salesTargets=d.salesTargets||[]; d.inventory=d.inventory||[]; d.inventoryLogs=d.inventoryLogs||[]; d.posSales=d.posSales||[]; d.posCustomers=d.posCustomers||[]; d.farmerOrders=d.farmerOrders||[]; d.farmerChecklists=d.farmerChecklists||[]; d.farmerSupport=d.farmerSupport||[]; d.farmerNotices=d.farmerNotices||[]; d.events=d.events||[]; d.contentItems=d.contentItems||[];
+  d.farmerAccountAudit=Array.isArray(d.farmerAccountAudit)?d.farmerAccountAudit:[]; d.farmerAccounts=Array.isArray(d.farmerAccounts)?d.farmerAccounts:[]; d.training=d.training||[]; d.salesTargets=d.salesTargets||[]; d.inventory=d.inventory||[]; d.inventoryLogs=d.inventoryLogs||[]; d.posSales=d.posSales||[]; d.posCustomers=d.posCustomers||[]; d.farmerOrders=d.farmerOrders||[]; d.farmerChecklists=d.farmerChecklists||[]; d.farmerSupport=d.farmerSupport||[]; d.farmerNotices=d.farmerNotices||[]; d.events=d.events||[]; d.contentItems=d.contentItems||[];
   const ensureUid=(arr,prefix)=>(arr||[]).map((x,i)=>({...x,_uid:x._uid||prefix+'-'+String(x.id||x.certNo||x.batchNo||'')+'-'+String(x.createdAt||x.date||'')+'-'+i}));
   d.followups=ensureUid(d.followups,'FUP').map(x=>({...x,week:Number(x.week||Math.min(6,Math.max(1,Math.ceil(age(batch(x.batch)?.date||x.date)/7))))}));
   d.liftings=ensureUid(d.liftings,'LFT');
@@ -1799,16 +1870,45 @@ function updateSyncStatus(){
 }
 window.addEventListener('online',()=>{updateSyncStatus(); if(currentUser)syncPendingLocalToCloud();});
 window.addEventListener('offline',updateSyncStatus);
+let mpfSyncInFlight=null;
 async function syncPendingLocalToCloud(){
   if(!cloudReady()||!currentUser||!navigator.onLine)return false;
-  try{
-    const {data,error}=await supabaseClient.from("mpf_app_state").select("data,updated_at").eq("owner_id",currentUser.id).maybeSingle();
-    if(error)throw error;
-    db=mergeDb(data?.data||{},db); lastSavedAt=new Date().toISOString(); persistLocal(true);
-    const up=await supabaseClient.from("mpf_app_state").upsert({owner_id:currentUser.id,data:db,updated_at:lastSavedAt});
-    if(up.error)throw up.error; setLocalMeta({dirty:false,lastCloudSync:lastSavedAt}); persistLocal(false); renderAll();
-    try{await window.publishFarmerPortalCloud?.()}catch(e){} updateSyncStatus(); return true;
-  }catch(e){console.warn('Cloud sync delayed',e);updateSyncStatus();return false}
+  if(mpfSyncInFlight)return mpfSyncInFlight;
+  mpfSyncInFlight=(async()=>{
+    const owner=currentUser.id;
+    try{
+      for(let attempt=0;attempt<5;attempt++){
+        if(currentUser?.id!==owner)return false;
+        const before=localMeta().lastLocalSave;
+        const {data,error}=await supabaseClient.from('mpf_app_state').select('data,updated_at').eq('owner_id',owner).maybeSingle();
+        if(error)throw error;
+        const merged=mergeDb(data?.data||{},db);
+        // A conditional update ensures another device's newer cloud revision cannot be silently overwritten.
+        const stamp=new Date(Date.now()+attempt).toISOString();
+        let result;
+        if(data){
+          result=await supabaseClient.from('mpf_app_state').update({data:merged,updated_at:stamp}).eq('owner_id',owner).eq('updated_at',data.updated_at).select('updated_at');
+          if(result.error)throw result.error;
+          if(!result.data?.length)continue; // concurrent writer: reread and merge
+        }else{
+          result=await supabaseClient.from('mpf_app_state').insert({owner_id:owner,data:merged,updated_at:stamp}).select('updated_at');
+          if(result.error){if(result.error.code==='23505')continue;throw result.error;}
+        }
+        db=mergeDb(merged,db);lastSavedAt=result.data?.[0]?.updated_at||stamp;
+        // A form could have been saved during the network request: never clear that dirty flag.
+        const changedDuringSync=before!==localMeta().lastLocalSave;
+        persistLocal(changedDuringSync);
+        if(!changedDuringSync)setLocalMeta({dirty:false,lastCloudSync:lastSavedAt});
+        renderAll();
+        try{await window.publishFarmerPortalCloud?.()}catch(e){console.warn('Farmer portal publication delayed',e)}
+        updateSyncStatus();
+        if(changedDuringSync)setTimeout(()=>syncPendingLocalToCloud(),100);
+        return true;
+      }
+      console.warn('MPF sync conflict: retry limit reached; local changes retained');updateSyncStatus();return false;
+    }catch(e){console.warn('Cloud sync delayed; local changes retained',e);updateSyncStatus();return false;}
+  })();
+  try{return await mpfSyncInFlight}finally{mpfSyncInFlight=null}
 }
 async function loadCloud(){
   if(!cloudReady()) return;
@@ -1838,10 +1938,13 @@ function subscribeRealtime(){
       const row=payload.new;
       if(!row||!row.data) return;
       if(lastSavedAt&&row.updated_at&&row.updated_at<=lastSavedAt) return; // ignore echo of our own save
+      const pending=localMeta().dirty||!!mpfSyncInFlight;
       db=mergeDb(row.data,db);
       lastSavedAt=row.updated_at||new Date().toISOString();
-      setLocalMeta({dirty:false,lastCloudSync:lastSavedAt});persistLocal(false);
+      if(!pending)setLocalMeta({dirty:false,lastCloudSync:lastSavedAt});
+      persistLocal(pending);
       renderAll();
+      if(pending&&navigator.onLine)setTimeout(()=>syncPendingLocalToCloud(),250);
     })
     .subscribe();
 }
@@ -1879,6 +1982,11 @@ function tab(id,btn){
   }
 } function toggleSideNav(){const open=document.body.classList.toggle("nav-open");const b=document.querySelector(".nav-toggle");if(b)b.setAttribute("aria-expanded",open?"true":"false")} function closeSideNav(){document.body.classList.remove("nav-open");const b=document.querySelector(".nav-toggle");if(b)b.setAttribute("aria-expanded","false")}
 
+// Bound remote calls so an unavailable network never leaves the login screen spinning.
+function mpfLoginDeadline(promise,ms,label){
+  let timer;
+  return Promise.race([Promise.resolve(promise),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error(label+" timed out. Check your connection and try again.")),ms)})]).finally(()=>clearTimeout(timer));
+}
 async function login(){
   const msg=$("loginMsg");
   try{
@@ -1900,28 +2008,13 @@ async function login(){
       : entered.toLowerCase().replace(/[^a-z0-9._-]/g,"")+"@mpf.local";
 
     const btn=document.querySelector('#login button[onclick="login()"]');
+    if(btn?.disabled)return;
     if(btn){btn.disabled=true;btn.dataset.oldText=btn.textContent;btn.textContent="Logging in...";}
 
-    let result=await supabaseClient.auth.signInWithPassword({email,password});
+    let result=await mpfLoginDeadline(supabaseClient.auth.signInWithPassword({email,password}),15000,"Authentication");
 
-    // Preserve the original MPF behavior for a username that has not yet been
-    // created in Supabase Auth. If sign-up is allowed by the Supabase project,
-    // create the username@mpf.local account exactly as earlier versions did.
-    if(result.error &&
-       String(result.error.message||"").toLowerCase().includes("invalid login credentials") &&
-       !entered.includes("@")){
-      const created=await supabaseClient.auth.signUp({
-        email,
-        password,
-        options:{data:{name:entered,username:entered}}
-      });
-      if(!created.error && created.data?.session){
-        result={data:created.data,error:null};
-      }else if(!created.error){
-        if(msg)msg.textContent="This username account needs activation in Supabase Authentication before it can log in.";
-        return;
-      }
-    }
+    // Authentication must not create a new user when existing credentials fail.
+    // Provision staff accounts separately in Supabase Auth.
 
     if(result.error){
       const em=String(result.error.message||"");
@@ -1938,12 +2031,16 @@ async function login(){
     }
 
     localStorage.setItem("mpfLastUsername",entered);
-    await saveOfflineAuth(entered,password,currentUser);
-    await loadCloud();
-    subscribeRealtime();
-    await showWelcome();
+    // Never hold the login screen open while cloud state is loading.
+    try{await mpfLoginDeadline(saveOfflineAuth(entered,password,currentUser),4000,"Offline credential cache")}catch(e){console.warn(e)}
     await showApp();
     renderAll();
+    // Cloud failure leaves local records intact and visible; user can retry sync.
+    mpfLoginDeadline(loadCloud(),18000,"Cloud load").then(()=>{subscribeRealtime();renderAll();}).catch(e=>{
+      console.error("Cloud initialization:",e);
+      if(msg)msg.textContent="Signed in. Cloud sync unavailable: "+e.message+" Your local data has not been cleared.";
+      updateSyncStatus();
+    });
   }catch(err){
     console.error("Login error",err);
     if(msg)msg.textContent="Login failed: "+(err?.message||"Unknown error");
@@ -2000,7 +2097,7 @@ function startHeaderClock(){
 }
 async function showApp(){
   loadLocal(); updateSyncStatus(); updateAutoBackupStatus();
-  if(cloudReady()&&!currentUser){const {data}=await supabaseClient.auth.getUser();currentUser=data.user||null;if(currentUser){await loadCloud();subscribeRealtime();setTimeout(()=>pullFarmerPortalActions(),500);setTimeout(()=>subscribeFarmerPortalActions(),800)}}
+  if(cloudReady()&&!currentUser){let authResult;try{authResult=await mpfLoginDeadline(supabaseClient.auth.getUser(),10000,"Session check")}catch(e){console.warn(e);authResult={data:{user:null}}}const {data}=authResult;currentUser=data.user||null;if(currentUser){try{await mpfLoginDeadline(loadCloud(),18000,"Cloud load")}catch(e){console.warn(e)}subscribeRealtime();setTimeout(()=>pullFarmerPortalActions(),500);setTimeout(()=>subscribeFarmerPortalActions(),800)}}
   if(!currentUser){document.body.classList.add("login-active");const last=localStorage.getItem("mpfLastUsername"); if(last&& !$("loginUser").value)$("loginUser").value=last;$("login").style.display="flex";return}
   document.body.classList.remove("login-active");$("login").style.display="none";const displayUser=currentUser.user_metadata?.full_name||currentUser.user_metadata?.name||currentUser.email||"Cloud user";$("who").textContent=displayUser+" • Logged in";
   startHeaderClock();initDoubleBackExit();
@@ -2149,13 +2246,28 @@ function saveBatch(){
     edit.batch=null;
     $('batchSave').textContent='Save Batch';
   }else{
-    let n=db.batches.filter(x=>x.farmer===farmerId).length+1;
-    obj.id='BLR-'+farmerId+'-'+String(n).padStart(3,'0');
-    while(batch(obj.id)){
+    // Never reuse an old/deleted batch ID. Deleted IDs are kept as sync tombstones;
+    // reusing one makes mergeDb() correctly treat the new record as deleted.
+    const prefix='BLR-'+farmerId+'-';
+    const usedBatchIds=new Set((db.batches||[]).map(x=>String(x.id||'')));
+    const deletedBatchIds=new Set((db.deletedRecords||[])
+      .filter(t=>String(t.type||'')==='batches')
+      .map(t=>String(t.key||'')));
+    let maxNo=0;
+    [...usedBatchIds,...deletedBatchIds].forEach(id=>{
+      if(id.startsWith(prefix)){
+        const no=Number(id.slice(prefix.length));
+        if(Number.isFinite(no)&&no>maxNo)maxNo=no;
+      }
+    });
+    let n=maxNo+1;
+    obj.id=prefix+String(n).padStart(3,'0');
+    while(usedBatchIds.has(obj.id)||deletedBatchIds.has(obj.id)){
       n++;
-      obj.id='BLR-'+farmerId+'-'+String(n).padStart(3,'0');
+      obj.id=prefix+String(n).padStart(3,'0');
     }
     obj.createdAt=Date.now();
+    obj.updatedAt=new Date().toISOString();
     db.batches.push(obj);
   }
   resetForm('', ['bQty','bRate','bStaff','bRemarks']);
@@ -3226,6 +3338,10 @@ async function printCertificatePdfFallback(i){
     const w=window.open('','_blank');if(!w)return alert('Pop-up was blocked. Allow pop-ups for MPF and try again.');
     const host=document.createElement('div'),page=buildSampleMasterCertificatePage(i);host.appendChild(page);
     w.document.open();w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>MPF Certificate</title><style>@page{size:A4 landscape;margin:0}html,body{width:297mm!important;height:210mm!important;margin:0!important;padding:0!important;overflow:hidden!important;background:#fff}.mpf-sample-master-cert-page{position:absolute!important;left:0!important;top:0!important;width:297mm!important;height:210mm!important;margin:0!important;overflow:hidden!important;break-after:auto!important;page-break-after:auto!important}</style></head><body>${host.innerHTML}<script>window.onload=()=>setTimeout(()=>window.print(),500)<\/script>\n<style id="mpf-v17-premium-luxury">\n/* V17 PREMIUM LUXURY UI — presentation only; business/data logic untouched */\n:root{--green:#0a3b2a;--green2:#126044;--ink:#171a18;--muted:#727a75;--bg:#f3f1eb;--line:#ddd8cb;--soft:#f7f3e8;--gold:#c9a227;--gold2:#f0d878;--black:#111412;--shadow:0 16px 42px rgba(17,20,18,.10);--shadow2:0 8px 22px rgba(17,20,18,.08)}\nhtml{background:#f3f1eb} body{background:radial-gradient(circle at 92% 0%,rgba(201,162,39,.09),transparent 26%),linear-gradient(180deg,#faf9f5 0,#f3f1eb 100%);color:var(--ink);letter-spacing:.005em}\nbody>header{background-image:linear-gradient(105deg,rgba(7,25,18,.96),rgba(10,59,42,.93) 55%,rgba(17,20,18,.96))!important;border-bottom:1px solid rgba(240,216,120,.38);box-shadow:0 12px 32px rgba(0,0,0,.22)!important;padding:14px 24px!important}\nheader h1{font-size:22px!important;font-weight:850!important;letter-spacing:-.45px!important;text-shadow:0 1px 12px rgba(0,0,0,.2)} header small{color:#e8e3d5;opacity:.88}\n.mpf-logo{border:2px solid rgba(240,216,120,.75)!important;box-shadow:0 0 0 4px rgba(201,162,39,.12),0 8px 24px rgba(0,0,0,.28)!important}\n.beta-mode-badge{background:linear-gradient(135deg,rgba(201,162,39,.24),rgba(240,216,120,.09))!important;border-color:rgba(240,216,120,.55)!important;color:#fff4c4!important}.header-clock{color:#f7edc2}\nnav{background:rgba(18,21,19,.97)!important;border-bottom:1px solid rgba(201,162,39,.34)!important;box-shadow:0 8px 24px rgba(0,0,0,.13)!important;padding:9px 14px!important;scrollbar-width:thin}\nnav button{color:#d7d9d5!important;background:transparent!important;border:1px solid transparent!important;border-radius:10px!important;padding:9px 13px!important;font-weight:700!important}\nnav button:hover{color:#ffe99a!important;background:rgba(201,162,39,.10)!important;border-color:rgba(201,162,39,.18)!important;transform:translateY(-1px)}\nnav button.active{color:#161813!important;background:linear-gradient(135deg,#f0d878,#c9a227)!important;border-color:#f4dc7b!important;box-shadow:0 6px 16px rgba(201,162,39,.24)!important}\n.nav-submenu{background:rgba(12,15,13,.98)!important;border:1px solid rgba(201,162,39,.20)!important;border-radius:12px!important;padding:8px!important;box-shadow:0 18px 36px rgba(0,0,0,.25)!important}\nmain{max-width:1540px!important;padding:26px 28px 46px!important}\nh2{font-size:23px;letter-spacing:-.35px;color:#10271e}h3{color:#17382a;letter-spacing:-.2px}\n.panel,.card{background:linear-gradient(145deg,rgba(255,255,255,.99),rgba(250,248,241,.97))!important;border:1px solid #ded8c8!important;border-radius:18px!important;box-shadow:var(--shadow2)!important;position:relative}\n.panel{padding:21px!important}.panel:before{content:"";position:absolute;left:18px;right:18px;top:0;height:2px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.7),transparent);opacity:.6}\n.card{padding:18px!important;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.card:hover{transform:translateY(-2px);border-color:#cdbd86!important;box-shadow:0 14px 30px rgba(17,20,18,.11)!important}.card b{font-size:27px!important;color:#123f2e}.card:after{content:"";position:absolute;width:74px;height:74px;right:-28px;bottom:-34px;border-radius:50%;background:rgba(201,162,39,.10)}\nlabel{color:#3b443f;font-weight:750!important}input,select,textarea{background:#fffefb!important;border:1px solid #d7d1c2!important;border-radius:11px!important;padding:10px 12px!important;color:#171a18;box-shadow:inset 0 1px 2px rgba(17,20,18,.025)}\ninput:hover,select:hover,textarea:hover{border-color:#b9ad89!important}input:focus,select:focus,textarea:focus{border-color:#b8921e!important;box-shadow:0 0 0 3px rgba(201,162,39,.13)!important;outline:none!important}\n.primary,.secondary,.danger,.actions button{border-radius:10px!important;font-weight:800!important;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}.primary{background:linear-gradient(135deg,#0b4b34,#14704d)!important;border:1px solid #1b7655!important;box-shadow:0 6px 14px rgba(10,75,52,.18)!important}.primary:hover,.secondary:hover,.danger:hover,.actions button:hover{transform:translateY(-1px);filter:brightness(1.03)}.secondary{background:linear-gradient(135deg,#282d2a,#414944)!important}.danger{background:linear-gradient(135deg,#9d211b,#c9362d)!important}\n.tablewrap{background:#fff!important;border:1px solid #ded8c8!important;border-radius:14px!important;box-shadow:0 5px 18px rgba(17,20,18,.04)!important}table{background:#fff}th{position:sticky;top:0;z-index:1;background:linear-gradient(180deg,#202622,#171b18)!important;color:#f3e7b2!important;font-size:10px!important;letter-spacing:.65px!important;border-bottom:1px solid #8e7627!important}td{color:#303632}td,th{padding:11px 10px!important}tbody tr:nth-child(even){background:#fbfaf6}tbody tr:hover{background:#f8f2dc!important}\n.search-panel,.reportbox{background:linear-gradient(145deg,#fff,#f8f5eb)!important;border-color:#ded6bf!important;border-radius:15px!important;box-shadow:0 5px 16px rgba(17,20,18,.04)}\n.modal{background:rgba(5,8,6,.72)!important;backdrop-filter:blur(7px)}.modalbox{border:1px solid rgba(240,216,120,.5)!important;border-radius:20px!important;box-shadow:0 28px 80px rgba(0,0,0,.34)!important;background:linear-gradient(145deg,#fff,#f8f5eb)!important}\n.login{background:radial-gradient(circle at 25% 15%,rgba(201,162,39,.22),transparent 28%),linear-gradient(135deg,#071b13,#0b3f2c 56%,#111412)!important}.loginbox{border:1px solid rgba(240,216,120,.55)!important;border-radius:22px!important;box-shadow:0 28px 80px rgba(0,0,0,.38)!important;background:linear-gradient(145deg,#fff,#f7f2e4)!important;padding:32px!important}.loginbox h1{color:#123f2e!important;letter-spacing:-.4px}.mpf-login-logo{border:3px solid #d3b44c!important;box-shadow:0 0 0 6px rgba(201,162,39,.12),0 14px 30px rgba(0,0,0,.16)!important}\n.good{color:#087443!important}.bad{color:#b42318!important}.muted{color:#737b76!important}.notice{border:1px solid #dfd3ad!important}.pager button{border-color:#d7cfb7!important;background:#fffef9!important}.pager button.active{background:linear-gradient(135deg,#0b4b34,#14704d)!important;border-color:#0b4b34!important}\n.mpf-toast{background:linear-gradient(135deg,#111412,#0b3f2c)!important;border:1px solid rgba(240,216,120,.42);color:#fff5c9!important;box-shadow:0 14px 38px rgba(0,0,0,.3)!important}\n::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:#eeeae0}::-webkit-scrollbar-thumb{background:#9a927d;border-radius:20px;border:2px solid #eeeae0}::-webkit-scrollbar-thumb:hover{background:#716a58}\n@media(max-width:900px){main{padding:15px 13px 88px!important}body>header{padding:11px 14px!important}.mpf-logo{width:48px!important;height:48px!important}nav{padding:7px 9px!important}.panel{padding:15px!important}.card{padding:14px!important}.cards{gap:10px!important}h2{font-size:20px}.tablewrap{border-radius:12px!important}}\n@media(max-width:650px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}.card b{font-size:23px!important}.loginbox{padding:24px 20px!important;border-radius:18px!important}.actions{gap:7px!important}.actions button{min-height:38px}.grid{grid-template-columns:1fr!important}}\n@media print{body{background:#fff!important} .panel,.card,.tablewrap{box-shadow:none!important}}\n</style>\n
+
+
+
+
 </body></html>`);w.document.close();
   }catch(e){console.error(e);alert('Could not prepare the sample-format certificate for printing: '+(e.message||e))}
 }
@@ -8070,6 +8186,218 @@ window.addEventListener('load',()=>{setTimeout(()=>{scheduleDailyJsonBackup();up
   window.addEventListener('error',function(e){ if(e && e.error) console.error('MPF runtime error:',e.error); });
 })();
 </script>
+<script>
+/* Weekly broiler planning is UI-only: existing orders/database are never mutated. */
+(function(){
+const selectedByWeek=new Map();
+const weeklyStorageKey=()=> 'MPF_WEEKLY_BROILER_SELECTIONS_V2_'+String((typeof currentUser!=='undefined'&&currentUser?.id)||'offline');
+let weeklyLoadedFor='';
+function loadWeekly(){const k=weeklyStorageKey();if(weeklyLoadedFor===k)return;selectedByWeek.clear();weeklyLoadedFor=k;try{const data=JSON.parse(localStorage.getItem(k)||'{}');Object.entries(data).forEach(([week,ids])=>{if(/^\d{4}-\d{2}-\d{2}$/.test(week)&&Array.isArray(ids))selectedByWeek.set(week,new Set(ids.map(String)))});}catch(e){console.warn('Weekly selections could not be restored',e)}}
+function persistWeekly(){try{localStorage.setItem(weeklyStorageKey(),JSON.stringify(Object.fromEntries([...selectedByWeek].map(([k,v])=>[k,[...v]]))))}catch(e){console.warn('Weekly selections could not be stored',e);alert('Weekly selections could not be saved on this device. Export the PDF now.')}}
+const $w=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dayString=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+function weekStart(v){const d=v?new Date(v+'T12:00:00'):new Date();d.setDate(d.getDate()-(d.getDay()+6)%7);return dayString(d)}
+function weekKey(){return weekStart($w('mpfWeeklyDate')?.value)}
+function chosen(){loadWeekly();const k=weekKey();if(!selectedByWeek.has(k))selectedByWeek.set(k,new Set());return selectedByWeek.get(k)}
+function orders(){return ((typeof db!=='undefined'&&db.sales)||[]).filter(o=>String(o.status||'').toLowerCase()==='pending' && /\bbroiler\b/i.test(String(typeof saleBreed==='function'?saleBreed(o):o.product||''))).sort((a,b)=>String(a.deliveryDate||'').localeCompare(String(b.deliveryDate||'')))}
+function visible(){const q=($w('mpfWeeklySearch')?.value||'').trim().toLowerCase();return orders().filter(o=>[o.id,o.name,o.phone].some(v=>String(v||'').toLowerCase().includes(q)))}
+function active(){const ids=new Set(orders().map(o=>String(o.id)));return orders().filter(o=>ids.has(String(o.id))&&chosen().has(String(o.id)))}
+window.mpfWeeklyToggle=function(id,checked){checked?chosen().add(String(id)):chosen().delete(String(id));persistWeekly();totals()}
+function totals(){const a=active(),qty=a.reduce((n,o)=>n+Number(o.qty||0),0),val=a.reduce((n,o)=>n+Number(o.total||0),0);$w('mpfWeeklyTotals').textContent=`Selected: ${a.length} orders | ${qty.toLocaleString('en-IN')} chicks | ₹${val.toLocaleString('en-IN',{maximumFractionDigits:2})}`;}
+window.mpfRenderWeeklyBroiler=function(){
+ const body=$w('mpfWeeklyRows');if(!body)return;
+ if(!$w('mpfWeeklyDate').value)$w('mpfWeeklyDate').value=weekStart();
+ const data=visible(),sel=chosen();
+ body.innerHTML=data.length?data.map(o=>`<tr class="mpf-weekly-edit-row" data-order-id="${esc(o.id)}" title="Click row to edit previous order details" style="cursor:pointer"><td><input type="checkbox" aria-label="Select ${esc(o.name)}" value="${esc(o.id)}" ${sel.has(String(o.id))?'checked':''} onchange="mpfWeeklyToggle(this.value,this.checked)"></td><td>${esc(o.id)}</td><td>${esc(o.name)}</td><td>${esc(o.phone)}</td><td>${Number(o.qty||0)}</td><td>${esc(o.deliveryDate||'-')}</td><td>₹${Number(o.total||0).toLocaleString('en-IN')}</td><td><button type="button" class="secondary mpf-weekly-edit-button" style="margin:0">Edit</button></td></tr>`).join(''):'<tr><td colspan="8">No matching pending Broiler orders.</td></tr>';
+ totals();
+}
+window.mpfWeeklyOpenEdit=function(id){
+ const o=orders().find(x=>String(x.id)===String(id));
+ if(!o){alert('This order is no longer pending. Refresh the list to see current orders.');mpfRenderWeeklyBroiler();return}
+ if(typeof window.mpfCommercialEditOrder!=='function'){alert('Order editor is not available.');return}
+ window.mpfCommercialEditOrder(String(o.id),db.sales.indexOf(o));
+};
+function bindWeeklyEdit(){const rows=$w('mpfWeeklyRows');if(!rows||rows.dataset.editBound)return;rows.dataset.editBound='true';rows.addEventListener('click',e=>{
+ if(e.target.closest('input[type="checkbox"]'))return;
+ const row=e.target.closest('tr[data-order-id]');if(row)mpfWeeklyOpenEdit(row.dataset.orderId);
+ });}
+window.mpfWeeklySelectVisible=function(on){visible().forEach(o=>on?chosen().add(String(o.id)):chosen().delete(String(o.id)));persistWeekly();mpfRenderWeeklyBroiler()}
+function report(){
+ const a=active();if(!a.length){alert('Select at least one pending Broiler order first.');return null}
+ const start=new Date(weekKey()+'T12:00:00'),end=new Date(start);end.setDate(end.getDate()+6);
+ const qty=a.reduce((n,o)=>n+Number(o.qty||0),0),value=a.reduce((n,o)=>n+Number(o.total||0),0),advance=a.reduce((n,o)=>n+Number(o.advance||0),0);
+ const money=n=>Number(n||0).toLocaleString('en-IN',{maximumFractionDigits:2});
+ const cell=(v,align='left')=>`<td style="border:1px solid #777;padding:7px 3px;height:27px;text-align:${align};font-size:9px;overflow-wrap:anywhere">${esc(v)}</td>`;
+ const html=`<div style="font-family:Arial,Helvetica,sans-serif;color:#1b1b1b;background:#fff;padding:5px;box-sizing:border-box;width:100%">
+ <div style="border-bottom:3px solid #e3b91c;padding:0 0 8px;text-align:center"><div style="font-weight:800;font-size:20px;letter-spacing:1px">MANIPUR POULTRY FARM</div><div style="font-size:12px;font-weight:700;margin-top:5px">WEEKLY BROILER CHICKS — OFFLINE SALES SHEET</div><div style="font-size:10px;margin-top:5px">Week: ${esc(weekKey())} to ${esc(dayString(end))} &nbsp; | &nbsp; Arrival day: ☐ Friday &nbsp; ☐ Saturday &nbsp; Date: __________</div></div>
+ <div style="display:flex;justify-content:space-between;gap:6px;font-size:10px;padding:10px 0 8px"><span><b>Farmers:</b> ${a.length} &nbsp; <b>Chicks:</b> ${qty.toLocaleString('en-IN')}</span><span><b>Planned value:</b> ₹${money(value)} &nbsp; <b>Advance:</b> ₹${money(advance)} &nbsp; <b>Balance:</b> ₹${money(value-advance)}</span></div>
+ <table style="border-collapse:collapse;width:100%;table-layout:fixed"><colgroup><col style="width:5%"><col style="width:21%"><col style="width:13%"><col style="width:7%"><col style="width:8%"><col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:16%"></colgroup><thead><tr style="background:#f5e5a5">${['No.','Farmer','Phone','Qty','Rate ₹','Balance ₹','Cash ₹','UPI ₹','Remarks'].map(t=>`<th style="border:1px solid #555;padding:7px 2px;font-size:9px;text-align:center">${t}</th>`).join('')}</tr></thead><tbody>${a.map((o,i)=>`<tr>${cell(i+1,'center')}${cell(o.name)}${cell(o.phone)}${cell(Number(o.qty||0),'center')}${cell(money(o.rate||0),'right')}${cell(money(Number(o.total||0)-Number(o.advance||0)),'right')}${cell('')}${cell('')}${cell('')}</tr>`).join('')}</tbody></table>
+ <div style="font-size:9px;display:flex;justify-content:space-between;margin-top:12px"><span><b>Total:</b> ${qty.toLocaleString('en-IN')} chicks &nbsp; | &nbsp; Outstanding on selected orders: ₹${money(value-advance)}</span><span>Cash total: __________ &nbsp; UPI total: __________</span></div>
+ <div style="font-size:10px;margin-top:25px;display:flex;justify-content:space-between"><span>Prepared by: __________________</span><span>Checked by: __________________</span></div>
+ <div style="font-size:8px;color:#555;margin-top:14px;border-top:1px solid #aaa;padding-top:5px">Offline collection worksheet. Record payments in MPF software after sales. Blank Cash / UPI / Remarks columns are for handwriting; this report does not update payment records.</div></div>`;
+ return {html,start:weekKey()};
+}
+window.mpfDownloadWeeklyBroilerPDF=function(){
+ const r=report();if(!r)return;
+ if(typeof html2pdf==='undefined'){alert('PDF library not loaded. Use Print / Save as PDF instead.');return}
+ const el=document.createElement('div');el.innerHTML=r.html;
+ html2pdf().set({margin:7,filename:`MPF_Broiler_Weekly_Pending_${r.start}.pdf`,image:{type:'jpeg',quality:.98},html2canvas:{scale:2},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['css','legacy'],avoid:'tr'}}).from(el).save();
+}
+window.mpfPrintWeeklyBroiler=function(){
+ const r=report();if(!r)return;
+ const w=window.open('','_blank');if(!w){alert('Allow popups to print.');return}
+ w.document.write('<!doctype html><html><head><title>MPF Weekly Broiler Orders</title><style>@page{size:A4 portrait;margin:9mm}body{margin:0}tr{break-inside:avoid}</style></head><body>'+r.html+'</body></html>');
+ w.document.close();w.focus();setTimeout(()=>w.print(),350);
+}
+function init(){if($w('mpfWeeklyDate')){loadWeekly();bindWeeklyEdit();if(!$w('mpfWeeklyDate').value)$w('mpfWeeklyDate').value=weekStart();mpfRenderWeeklyBroiler()}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+<style id="mpf-row-action-style">
+/* Context actions: remove action columns from operational lists without touching underlying renderers. */
+.mpf-context-table thead th.mpf-action-column,.mpf-context-table tbody td.mpf-action-column{display:none!important}
+.mpf-context-table tbody tr.mpf-action-row{cursor:pointer}
+.mpf-context-table tbody tr.mpf-action-row:hover{background:#edf4ef!important}
+.mpf-context-table tbody tr.mpf-action-row:focus-visible{outline:2px solid #27674b;outline-offset:-2px}
+.mpf-row-action-backdrop{position:fixed;inset:0;background:#10231c99;z-index:15000;display:flex;align-items:center;justify-content:center;padding:16px}
+.mpf-row-action-dialog{background:white;width:min(540px,100%);max-height:85vh;overflow:auto;border-radius:12px;padding:22px;box-shadow:0 24px 70px #07160f50}
+.mpf-row-action-dialog h3{margin:0 0 9px}.mpf-row-action-summary{color:#526b5e;font-size:13px;margin-bottom:15px;line-height:1.6;overflow-wrap:anywhere}
+.mpf-row-action-buttons{display:flex;flex-wrap:wrap;gap:9px}.mpf-row-action-buttons button{margin:0!important;min-height:40px}
+</style>
+<script id="mpf-row-action-controller">
+(function(){
+ 'use strict';
+ // Apply to data lists, not form calculators, printable reports or shopping carts.
+ const ignoredIds=new Set(['posCartRows','weeklyTargetInputs']);
+ const headerPattern=/^(actions?|edit|manage|options?)$/i;
+ let currentDialog=null;
+ function headerText(th){return (th.textContent||'').trim().replace(/\s+/g,' ')}
+ function qualify(table){
+   if(table.closest('.modal,.mpf-row-action-dialog,.printonly,[id^="print"]'))return null;
+   const head=table.tHead?.rows?.[0];if(!head||!table.tBodies?.length)return null;
+   if(table.tBodies[0].id&&ignoredIds.has(table.tBodies[0].id))return null;
+   const headers=Array.from(head.cells);const indices=headers.map((th,i)=>headerPattern.test(headerText(th))?i:-1).filter(i=>i>=0);
+   return indices.length?indices:null;
+ }
+ function activate(table){
+   const indices=qualify(table);if(!indices)return;
+   table.classList.add('mpf-context-table');
+   const header=table.tHead.rows[0];indices.forEach(i=>header.cells[i]?.classList.add('mpf-action-column'));
+   Array.from(table.tBodies).forEach(tbody=>Array.from(tbody.rows).forEach(tr=>{
+     if(tr.classList.contains('mpf-action-dialog-source'))return;
+     const actionCells=indices.map(i=>tr.cells[i]).filter(Boolean);
+     actionCells.forEach(td=>td.classList.add('mpf-action-column'));
+     const controls=actionCells.flatMap(td=>Array.from(td.querySelectorAll('button,[role="button"],a,select,input:not([type="hidden"])')));
+     if(controls.length){tr.classList.add('mpf-action-row');tr.tabIndex=0;tr.setAttribute('aria-label','Open row actions');}
+     else{tr.classList.remove('mpf-action-row');tr.removeAttribute('tabindex');}
+   }));
+ }
+ function close(){if(currentDialog){currentDialog.remove();currentDialog=null}}
+ function open(tr){
+   const table=tr.closest('table'),indices=qualify(table);if(!indices)return;
+   const actionCells=indices.map(i=>tr.cells[i]).filter(Boolean);
+   const originals=actionCells.flatMap(td=>Array.from(td.querySelectorAll('button,[role="button"],a,select,input:not([type="hidden"])'))).filter(el=>!el.disabled);
+   if(!originals.length)return;
+   close();const back=document.createElement('div');back.className='mpf-row-action-backdrop';back.setAttribute('role','presentation');
+   const dialog=document.createElement('div');dialog.className='mpf-row-action-dialog';dialog.setAttribute('role','dialog');dialog.setAttribute('aria-modal','true');dialog.setAttribute('aria-label','Record actions');
+   const h=document.createElement('h3');h.textContent='Record actions';dialog.append(h);
+   const summary=document.createElement('div');summary.className='mpf-row-action-summary';
+   const details=Array.from(tr.cells).filter((td,i)=>!indices.includes(i)).slice(0,5).map(td=>td.innerText?.trim()).filter(Boolean);
+   summary.textContent=details.join('  ·  ').slice(0,300);dialog.append(summary);
+   const buttons=document.createElement('div');buttons.className='mpf-row-action-buttons';
+   originals.forEach((original,i)=>{
+     if(original.matches('select')){
+       const label=document.createElement('label');label.textContent='Choose action';const copy=document.createElement('select');
+       copy.innerHTML=original.innerHTML;copy.value=original.value;
+       copy.addEventListener('change',()=>{original.value=copy.value;original.dispatchEvent(new Event('change',{bubbles:true}));close()});label.append(copy);buttons.append(label);return;
+     }
+     if(original.matches('input'))return;
+     const button=document.createElement('button');button.type='button';button.className=original.className||'secondary';
+     button.textContent=(original.innerText||original.getAttribute('aria-label')||original.getAttribute('title')||`Action ${i+1}`).trim();
+     if(!button.textContent)button.textContent=`Action ${i+1}`;
+     button.addEventListener('click',()=>{close();if(original.isConnected)original.click();});buttons.append(button);
+   });
+   if(!buttons.children.length)return;
+   dialog.append(buttons);const footer=document.createElement('div');footer.style.cssText='margin-top:16px;text-align:right';
+   const cancel=document.createElement('button');cancel.className='secondary';cancel.textContent='Close';cancel.addEventListener('click',close);footer.append(cancel);dialog.append(footer);back.append(dialog);
+   back.addEventListener('click',e=>{if(e.target===back)close()});document.body.append(back);currentDialog=back;cancel.focus();
+ }
+ function scan(){document.querySelectorAll('main table').forEach(activate)}
+ document.addEventListener('click',e=>{
+   if(e.target.closest('.mpf-row-action-backdrop'))return;
+   const tr=e.target.closest('tr.mpf-action-row');if(!tr)return;
+   // Checkboxes, inputs and links outside the action column retain their original behavior.
+   if(e.target.closest('button,input,select,textarea,a,label,[contenteditable="true"]'))return;
+   open(tr);
+ });
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){close();return}
+   if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.mpf-action-row')){e.preventDefault();open(e.target)}
+ });
+ let queued=false;
+ const observer=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;scan()})});
+ function start(){scan();const main=document.querySelector('main');if(main)observer.observe(main,{childList:true,subtree:true});}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+</script><script id="mpf-global-popup-forms-js">
+(function(){
+ const modal=document.createElement('div');
+ modal.className='mpf-form-modal'; modal.id='mpfGlobalFormModal';
+ modal.innerHTML='<div class="mpf-form-dialog" role="dialog" aria-modal="true"><div class="mpf-form-head"><strong id="mpfFormTitle">Form</strong><button type="button" class="mpf-form-close" onclick="mpfCloseFormPopup()">Close</button></div><div class="mpf-form-body" id="mpfFormBody"></div></div>';
+ document.addEventListener('DOMContentLoaded',()=>document.body.appendChild(modal));
+ let origin=null, placeholder=null;
+
+ function titleFor(el){
+   const p=el.closest('.panel,.card,.reportbox,.tab')||el.parentElement;
+   const h=p&&p.querySelector('h1,h2,h3,h4');
+   return h ? h.textContent.trim() : 'Details';
+ }
+ window.mpfOpenFormPopup=function(form){
+   if(!form || form.closest('#mpfGlobalFormModal')) return;
+   if(origin) mpfCloseFormPopup();
+   origin=form.parentNode;
+   placeholder=document.createComment('mpf-form-origin');
+   origin.insertBefore(placeholder,form);
+   document.getElementById('mpfFormTitle').textContent=titleFor(form);
+   document.getElementById('mpfFormBody').appendChild(form);
+   modal.classList.add('show');
+   setTimeout(()=>form.querySelector('input:not([type=hidden]),select,textarea')?.focus(),30);
+ };
+ window.mpfCloseFormPopup=function(){
+   if(origin&&placeholder&&placeholder.parentNode){
+     placeholder.parentNode.insertBefore(document.querySelector('#mpfFormBody form'),placeholder);
+     placeholder.remove();
+   }
+   modal.classList.remove('show'); origin=null; placeholder=null;
+ };
+ modal.addEventListener('click',e=>{if(e.target===modal)mpfCloseFormPopup()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('show'))mpfCloseFormPopup()});
+
+ function wire(){
+   /* Convert visible operational forms into dialogs while leaving login/search/filter forms inline. */
+   document.querySelectorAll('form').forEach(form=>{
+     if(form.closest('.login,.modal,#mpfGlobalFormModal')) return;
+     const text=(form.textContent||'').toLowerCase();
+     const inputs=form.querySelectorAll('input,select,textarea').length;
+     if(inputs<2) return;
+     if(/search|filter/.test(text) && inputs<=3) return;
+     if(form.dataset.mpfPopupWired) return;
+     form.dataset.mpfPopupWired='1';
+     const host=form.closest('.panel,.card,.reportbox')||form.parentElement;
+     const trigger=document.createElement('button');
+     trigger.type='button'; trigger.className='primary mpf-form-launch';
+     const h=host&&host.querySelector('h2,h3,h4');
+     trigger.textContent='Open '+(h?h.textContent.trim():'Form');
+     trigger.onclick=()=>mpfOpenFormPopup(form);
+     form.parentNode.insertBefore(trigger,form);
+     form.classList.add('mpf-popup-form-hidden');
+   });
+ }
+ document.addEventListener('DOMContentLoaded',()=>{wire();new MutationObserver(wire).observe(document.body,{childList:true,subtree:true})});
+})();
+</script>
+
 </body>
 </html>
 
